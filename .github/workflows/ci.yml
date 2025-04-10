@@ -23,6 +23,11 @@ jobs:
       - name: 📦 Install Dependencies
         run: npm install
 
+      - name: ✨ Lint & Format Check
+        run: |
+          npm run lint
+          npx prettier --check .
+
       - name: 🧪 Run Unit Tests (Karma)
         run: npm run test -- --watch=false --browsers=ChromeHeadless
 
