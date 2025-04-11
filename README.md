@@ -1,60 +1,161 @@
-# HybridFlightComponents
+# ✈️ Hybrid Flight Components
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.7.
+**A Modern Angular UI Component Library – Built for DJs, Crafted by DevOps.**
 
-## Development server
+![CI](https://img.shields.io/github/actions/workflow/status/<your-username>/hybrid-flight-components/ci.yml?label=CI&logo=github&style=flat-square)
+![Vercel](https://img.shields.io/vercel/deploy?label=Vercel%20Deploy&style=flat-square&logo=vercel)
+![License](https://img.shields.io/github/license/<your-username>/hybrid-flight-components?style=flat-square)
 
-To start a local development server , run:
+---
 
-```bash
-ng serve
-```
+## 🎯 What is this?
 
-TEST
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+> This is **not a website**.  
+> It’s a **modern, standalone Angular 19 UI component library**.
 
-## Code scaffolding
+`Hybrid Flight Components` is a showcase for clean, modular architecture and modern DevOps practices.  
+It's being developed for use in a personal **DJ portfolio**, but more importantly, it serves as a professional **demonstration of frontend infrastructure, testing, automation, and CI/CD pipelines**.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## 🥪 Stack Overview
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+| Area          | Tech / Tools                                                       |
+| ------------- | ------------------------------------------------------------------ |
+| **Framework** | Angular 19 (Standalone API)                                        |
+| **Styling**   | Tailwind CSS 3                                                     |
+| **Testing**   | Karma + Jasmine (Unit tests)                                       |
+| **Linting**   | ESLint + Prettier (strict, auto-fixable)                           |
+| **Preview**   | Storybook (interactive docs & visual regression testing ready)     |
+| **CI/CD**     | GitHub Actions – Lint, Test, Build, Deploy                         |
+| **Hosting**   | Vercel (with automatic preview & production deploys)               |
+| **Reviews**   | GitHub Copilot Review or manual dev review (required before merge) |
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## ⚙️ Automated Setup
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+This entire project was initialized with a **single shell command**:
 
 ```bash
-ng test
+bash setup-angular-tailwind-storybook.sh
 ```
 
-## Running end-to-end tests
+That `.sh` file:
 
-For end-to-end (e2e) testing, run:
+- 🚀 Creates a new Angular standalone component workspace
+- 🎨 Installs & configures Tailwind CSS
+- 🥪 Initializes Jasmine/Karma for testing
+- 📚 Adds Storybook with example component
+- ✅ Handles local scripts, build tools, and formatting rules
+
+---
+
+## 🛆 Getting Started
 
 ```bash
-ng e2e
+git clone https://github.com/<your-username>/hybrid-flight-components.git
+cd hybrid-flight-components
+npm install
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+---
 
-## Additional Resources
+## 🛠️ Dev Commands
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+| Command                   | Description                                   |
+| ------------------------- | --------------------------------------------- |
+| `npm start`               | Launches Angular dev server                   |
+| `npm run storybook`       | Run Storybook in dev mode                     |
+| `npm run test`            | Run all unit tests via Karma                  |
+| `npm run lint`            | Lint and check formatting (ESLint + Prettier) |
+| `npm run lint -- --fix`   | Auto-fix code style issues                    |
+| `npm run build`           | Build the component library                   |
+| `npm run build-storybook` | Build static Storybook site                   |
+
+---
+
+## 🔁 CI/CD Flow
+
+Triggered on:
+
+- ✅ `push` to `main`
+- ✅ Pull Request to `main`
+- ✅ Manual trigger via GitHub UI
+
+Steps:
+
+1. **Install dependencies**
+2. **Lint & format check**
+3. **Run unit tests**
+4. **Build Angular app**
+5. **Build Storybook**
+6. **Only after all steps succeed → deploy to Vercel**
+
+> ❗ Deployment is **blocked** until CI passes **and** a code review (human or Copilot) is complete.
+
+---
+
+## 📚 Storybook Docs
+
+🖥️ **Live Preview (Vercel):**  
+[https://hybrid-flight-components.vercel.app](https://hybrid-flight-components.vercel.app)
+
+🛠️ **Local Dev:**
+
+```bash
+npm run storybook
+```
+
+Each component is documented, tested, and visually previewed using Storybook.
+
+---
+
+## 🧱 Component Philosophy
+
+- 🛠️ Tailwind-based styling
+- 🛆 Standalone Angular components
+- ✅ Test file (spec)
+- 📚 Story file (storybook)
+- ✍️ Clean, maintainable code
+
+---
+
+## 🗕️ Roadmap
+
+- [x] CI/CD via GitHub Actions
+- [x] Vercel Deployment Integration
+- [x] Jasmine/Karma Testing
+- [x] ESLint + Prettier Auto Format
+- [x] Storybook Integration
+- [x] Branch Protection & Review Flow
+- [ ] More UI components (inputs, modals, etc.)
+- [ ] Visual regression via Chromatic or similar
+- [ ] npm Package Publishing?
+
+---
+
+## 👨‍🎤 Author & Purpose
+
+Made by **[Christopher Tonn](https://christophertonn.de)**  
+🎧 DJ by soul, 👨‍💻 developer by heart
+
+> _“A clean codebase is like a clean mix – balanced, flowing, and on point.”_
+
+This project is part of my professional DevOps portfolio and a demonstration of my frontend & infrastructure skills.
+
+---
+
+## 📄 License
+
+MIT – free to use, contribute, or remix.
+
+---
+
+## 💬 Let’s Connect
+
+If you like what you see:
+
+- ⭐ Star the repo
+- 🤝 Fork & contribute
+- 🔗 Connect via [LinkedIn](https://www.linkedin.com/in/christopher-tonn-b13b64142/)
