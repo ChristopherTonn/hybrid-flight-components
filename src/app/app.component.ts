@@ -9,6 +9,7 @@ import { marked } from 'marked';
   imports: [],
 })
 export class AppComponent {
+  title = 'hybrid-flight-components';
   readmeHtml = '';
   private http = inject(HttpClient);
 
