@@ -1,10 +1,8 @@
 # ✈️ Hybrid Flight Components
 
-**A Modern Angular UI Component Library – Built for DJs, Crafted by DevOps.**
-
-![CI](https://img.shields.io/github/actions/workflow/status/<your-username>/hybrid-flight-components/ci.yml?label=CI&logo=github&style=flat-square)
-![Vercel](https://img.shields.io/vercel/deploy?label=Vercel%20Deploy&style=flat-square&logo=vercel)
-![License](https://img.shields.io/github/license/<your-username>/hybrid-flight-components?style=flat-square)
+**A Modern Angular UI Component Library – Built for DJs, Crafted by a Developer.**
+![CI](https://img.shields.io/badge/CI-passing-brightgreen?style=flat-square&logo=github)
+[![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-000?style=flat-square&logo=vercel&logoColor=white)](https://hybrid-flight-components.vercel.app/)
 
 ---
 
@@ -13,8 +11,11 @@
 > This is **not a website**.  
 > It’s a **modern, standalone Angular 19 UI component library**.
 
-`Hybrid Flight Components` is a showcase for clean, modular architecture and modern DevOps practices.  
-It's being developed for use in a personal **DJ portfolio**, but more importantly, it serves as a professional **demonstration of frontend infrastructure, testing, automation, and CI/CD pipelines**.
+`Hybrid Flight Components` is a showcase for clean, modular architecture and modern DevOps practices.
+
+It’s built as a **standalone Angular UI component library**, designed for **reusability**, **maintainability**, and **visual consistency**.
+
+Developed for a **personal DJ portfolio**, it now serves as a professional **demonstration of frontend infrastructure, testing, automation, and CI/CD pipelines**.
 
 ---
 
@@ -54,7 +55,7 @@ That `.sh` file:
 ## 🛆 Getting Started
 
 ```bash
-git clone https://github.com/<your-username>/hybrid-flight-components.git
+git clone https://github.com/ChristopherTonn/hybrid-flight-components.git
 cd hybrid-flight-components
 npm install
 ```
