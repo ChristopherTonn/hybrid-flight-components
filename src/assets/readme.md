@@ -1,6 +1,6 @@
 # ✈️ Hybrid Flight Components
 
-**A Modern Angular UI Component Library – Built for DJs, Crafted by Dev's.**
+**A Modern Angular UI Component Library – Built for DJs, Crafted by a Developer.**
 ![CI](https://img.shields.io/badge/CI-passing-brightgreen?style=flat-square&logo=github)
 [![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-000?style=flat-square&logo=vercel&logoColor=white)](https://hybrid-flight-components.vercel.app/)
 
