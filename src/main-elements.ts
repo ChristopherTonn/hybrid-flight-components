@@ -9,9 +9,10 @@ if (environment.production) {
   enableProdMode();
 }
 
-const injector: Injector = importProvidersFrom([
+const moduleRef = importProvidersFrom([
   BrowserModule,
   provideZoneChangeDetection({ eventCoalescing: true }),
-]).ɵinj!;
+]);
+const injector: Injector = moduleRef.injector;
 
 defineCardElement(injector);
