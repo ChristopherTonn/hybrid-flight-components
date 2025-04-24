@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build-elements": "./build-element.sh",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "storybook": "ng run hybrid-flight-components:storybook",
