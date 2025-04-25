@@ -16,9 +16,7 @@
             "outputPath": "dist/hybrid-flight-components",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
@@ -32,9 +30,7 @@
                 "output": "/"
               }
             ],
-            "styles": [
-              "src/styles.css"
-            ],
+            "styles": ["src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -108,22 +104,14 @@
             "configDir": ".storybook",
             "browserTarget": "hybrid-flight-components:build",
             "compodoc": true,
-            "compodocArgs": [
-              "-e",
-              "json",
-              "-d",
-              "."
-            ],
+            "compodocArgs": ["-e", "json", "-d", "."],
             "outputDir": "storybook-static"
           }
         },
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
-            "lintFilePatterns": [
-              "src/**/*.ts",
-              "src/**/*.html"
-            ]
+            "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
           }
         }
       }
@@ -168,9 +156,7 @@
             "outputPath": "dist/elements-card",
             "index": "projects/elements-card/src/index.html",
             "browser": "projects/elements-card/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/elements-card/tsconfig.app.json",
             "assets": [
               {
@@ -178,9 +164,7 @@
                 "input": "projects/elements-card/public"
               }
             ],
-            "styles": [
-              "projects/elements-card/src/styles.css"
-            ],
+            "styles": ["projects/elements-card/src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -236,8 +220,6 @@
   },
   "cli": {
     "analytics": false,
-    "schematicCollections": [
-      "@angular-eslint/schematics"
-    ]
+    "schematicCollections": ["@angular-eslint/schematics"]
   }
 }
