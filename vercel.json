@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/card-element/(.*)",
+      "destination": "/dist/elements-card/$1"
+    }
+  ]
+}
