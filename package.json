@@ -11,6 +11,7 @@
     "storybook": "ng run hybrid-flight-components:storybook",
     "build-storybook": "ng run hybrid-flight-components:build-storybook",
     "lint": "ng lint && prettier --write .",
+    "format": "prettier --write .",
     "generate:urlrewrites": "node scripts/generate-vercel-rewrites.js"
   },
   "private": true,
