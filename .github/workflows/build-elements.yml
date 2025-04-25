@@ -1,0 +1,35 @@
+name: Build Angular Elements
+
+on:
+  workflow_run:
+    workflows: ['CI']
+    types:
+      - completed
+    branches:
+      - main
+
+jobs:
+  build-elements:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 🟢 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 📦 Install Dependencies (peer-deps fix)
+        run: npm install --legacy-peer-deps
+
+      - name: 🔁 Generate Vercel rewrites
+        run: node scripts/generate-vercel-rewrites.js
+
+      - name: 🧱 Build all Angular Elements
+        run: |
+          for dir in projects/elements-*; do
+            ng build $(basename $dir) --configuration production
+          done
