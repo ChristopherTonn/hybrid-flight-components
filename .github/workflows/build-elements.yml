@@ -29,5 +29,5 @@ jobs:
       - name: 🧱 Build all Angular Elements
         run: |
           for dir in projects/elements-*; do
-            ng build $(basename $dir) --configuration production
+              npx ng build $(basename $dir) --configuration production
           done
