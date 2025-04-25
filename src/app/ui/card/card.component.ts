@@ -7,3 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './card.component.css',
 })
 export class CardComponent {}
+
+export { Component };
