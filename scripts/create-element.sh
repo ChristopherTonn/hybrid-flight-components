@@ -20,6 +20,12 @@ else
     --inline-template \
     --skip-install \
     --interactive false
+
+  # ❌ Remove testing config
+  echo "🧹 Cleaning up test files..."
+  rm -f "projects/elements-$COMP/tsconfig.spec.json"
+  rm -f "projects/elements-$COMP/src/test.ts"
+  sed -i '' '/"test": {/,/},/d' angular.json
 fi
 
 MAIN="projects/elements-$COMP/src/main.ts"
