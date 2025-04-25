@@ -5,8 +5,7 @@ on:
     workflows: ['Build Angular Elements']
     types:
       - completed
-    branches:
-      - main
+
   workflow_dispatch:
 
 jobs:
